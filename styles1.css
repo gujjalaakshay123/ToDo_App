@@ -1,0 +1,53 @@
+.banner{
+    background-color: #ff612b;
+    color: white;
+    height: 4rem;  
+    display: flex;
+    flex-direction: row;
+    padding: 1% 2% 0% 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+body {
+    margin: -1%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.page{
+    padding: 3%;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 3%;
+}
+.page-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    margin-right: 5rem;
+}
+.labels{
+    color: #002677;
+}
+.inputtags {
+    border-radius: 1em;
+    height: 20%;
+}
+.submit {
+    background:#002677;
+    border: none;
+    color: white;
+    height: auto;
+    border-radius: 4rem;
+    margin-left: 3%;
+}
+.logo{
+    height: 60px;
+    width: 100px;
+}

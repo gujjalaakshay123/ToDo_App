@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner{
+            background-color: #ff612b;
+            color: white;
+            height: 4rem;  
+            display: flex;
+            flex-direction: row;
+            padding: 1% 2% 0% 3%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        body {
+            margin: -1%;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .inputtags {
+            border-radius: 1em;
+            height: 2rem;
+        }
+        .page{
+            padding: 2%;
+            background-color: whitesmoke
+        }
+        .login-form{
+            display: flex;
+            padding: 5%;
+            flex-direction: column;
+            background-color: white;
+            width: 20%;
+            height: auto;
+            border-radius: 0.5rem;margin-left: 50%;
+            box-shadow: 1em;
+            margin: 0px 0 0 500px
+        }
+        .formElements {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .submit{
+            border-radius: 4rem;
+            background-color: #ff612b;
+            height: 4rem;
+            margin: 13% 5% 0% 5%;
+            border: none;
+        }
+        .login-link{
+            margin: 1rem 0rem 0rem 8rem;
+        }
+        .page-links {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+        }
+        .link {
+            text-decoration: none;
+            color: white;
+            margin-right: 5rem;
+        }
+        .labels{
+            color: #002677;
+        }
+        .logo{
+            height: 60px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img class="logo" src="images/image.png" alt="website login-form">
+        <h2>TODO List </h2>
+        <div class="page-links">
+            <label><a class="link" href="home.html">Home</a></label>
+            <label><a class="link" href="login.html">Login</a></label>
+            <label><a class="link" href="Register.html">SignUp</a></label>
+        </div>
+    </div>
+    <div class="page">
+        <div class="login-form">
+            <h1 class="labels">Sign Up</h1>
+            <form class="formElements">
+                <label class="labels" for="firstName">First Name: </label>
+                <input type="text" id="firstName" class="inputtags" >
+                <label class="labels" for="lastName">First Name: </label>
+                <input type="text" id="lastName" class="inputtags">
+                <label class="labels" for="Email">Email :</label>
+                <input  class="inputtags" type="email" name="email" id="Email">
+                <label class="labels" for="passWord">password :</label>
+                <input class="inputtags" type="password" name="password" id="passWord">
+                <label class="labels" for="confirmPassword">Confirm password :</label>
+                <input class="inputtags" type="password" name="confirmpassword" id="confirmPassword">
+                <button class="submit" type="submit">Submit</button>
+                <label class="login-link">
+                    <a href="login.html">Login</a>
+                </label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
