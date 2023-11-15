@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Todo List</title>
     <link rel="stylesheet" href="styles2.css">
+    <script src="./scripts/login.js"></script>
 </head>
 
 <body>
@@ -18,15 +19,17 @@
             <label><a class="link" href="Register.html">SignUp</a></label>
         </div>
     </div>
-    <div class="page">
+    <div class="page"> 
         <div class="login-form">
             <h1 class="labels">Login</h1>
-            <form class="formElements">
+            <form class="formElements" id="loginForm">
                 <label class="labels" for="userName">username :</label>
-                <input class="inputtags" type="email" name="username" id="userName">
+                <input class="inputtags" type="text" name="username" id="userName">
                 <label class="labels" for="passWord">password :</label>
                 <input class="inputtags" type="password" name="password" id="passWord">
-                <button class="submit" type="submit"><a href="home.html">Submit</a></button>
+                <button class="submit" type="submit" id="submit" value="submit">Submit
+                    <!-- <a href="home.html">Submit</a> -->
+                </button>
             </form>
             <div style="margin-left: 2rem;">
              <h5>Don't have account? <a href="Register.html">Create One</a></h5>

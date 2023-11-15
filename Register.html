@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles3.css">
+    <script src="./scripts/Register.js"></script>
 </head>
 <body>
     <div class="banner">
@@ -19,10 +20,10 @@
     <div class="page">
         <div class="login-form">
             <h1 class="labels">Sign Up</h1>
-            <form class="formElements">
+            <form class="formElements" id="registerForm">
                 <label class="labels" for="firstName">First Name: </label>
                 <input type="text" id="firstName" class="inputtags" >
-                <label class="labels" for="lastName">First Name: </label>
+                <label class="labels" for="lastName">Last Name: </label>
                 <input type="text" id="lastName" class="inputtags">
                 <label class="labels" for="Email">Email :</label>
                 <input  class="inputtags" type="email" name="email" id="Email">
@@ -30,7 +31,7 @@
                 <input class="inputtags" type="password" name="password" id="passWord">
                 <label class="labels" for="confirmPassword">Confirm password :</label>
                 <input class="inputtags" type="password" name="confirmpassword" id="confirmPassword">
-                <button class="submit" type="submit">Submit</button>
+                <button class="submit" type="submit" id="submit" value="submit">Submit</button>
                 <label class="login-link">
                     <a href="login.html">Login</a>
                 </label>
