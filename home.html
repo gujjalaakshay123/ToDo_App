@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles1.css">
+    <script src="./scripts/home.js"></script>
 </head>
 <body>
     <div class="banner">
@@ -19,9 +20,10 @@
     <div class="page">
         <div class="list">
             <h1 class="labels">My List</h1>
-            <form>
-                <label class="labels"><b>Enter Item :</b> </label>
-                <input class="inputtags" type="text"><button class="submit">Submit</button>
+            <form id="homePageform">
+                <label class="labels" for="todoItem"><b>Enter Item :</b> </label>
+                <input id="todoItem" class="inputtags" name="todoitem" type="text">
+                <button class="submit" type="submit" id="submit" value="submit">Submit</button>
             </form>
             <div><input type="checkbox"><label>groceries</label></div>
             <div><input type="checkbox"><label>Go to pharmacy</label></div>
