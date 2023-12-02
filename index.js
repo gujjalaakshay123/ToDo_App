@@ -4,6 +4,7 @@ const app = express()
 app.use(express.json())
 
 const userRoutes = require('./server/routes/user')
+const todoRoutes = require('./server/routes/todo')
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");  
@@ -13,6 +14,7 @@ app.use(function(req, res, next) {
   });
 
   app.use('/users', userRoutes)
+  app.use('/todo', todoRoutes)
 
   const PORT = process.env.PORT || 3000
 
