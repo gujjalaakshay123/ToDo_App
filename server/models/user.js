@@ -29,7 +29,7 @@ async function login(user) {
 async function register(userDetails){
     let userR = await getUser(userDetails.userName);
     if(userR[0]) throw Error("Username already exists!!")
-    let sql = `INSERT INTO user (userName, password) VALUES ("${userDetails.userName}","${userDetails.password}")`;
+    let sql = `INSERT INTO user (userName, password, firstName, lastName, email) VALUES ("${userDetails.userName}","${userDetails.password}","${userDetails.firstName}","${userDetails.lastName}","${userDetails.email}")`;
     await conn.query(sql)
     const insertedUser = await getUser(userDetails.userName)
     return insertedUser[0]

@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error =>{
             console.log(error)
             let errorMessage = document.querySelector('#loginForm .error')
-            errorMessage.innerHTML = `<p>${error.message}</p>`
             document.getElementById('userName').value = ''
             document.getElementById('passWord').value = ''
         })
