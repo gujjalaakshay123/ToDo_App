@@ -1,14 +1,3 @@
-// const users = [
-//     {
-//         username: 'akshay123',
-//         password: 'ak1234'
-//     },
-//     {
-//         username: 'dummy345',
-//         password: 'dummypass'
-
-//     }
-// ]
 const conn = require('../config/db_conn')
 
 async function createTable() {
@@ -18,13 +7,13 @@ async function createTable() {
         userName VARCHAR(25) NOT NULL,
         password VARCHAR(255) NOT NULL,
         CONSTRAINT UserPK PRIMARY KEY(UserId));`
-        await con.query(sql)
+        await conn.query(sql)
   }
   
   createTable()
 async function getUsers() {
     let sql = `SELECT * FROM user`;
-    return conn.query(sql, (err, result) => {
+    return await conn.query(sql, (err, result) => {
         if (!result || err) return console.log(err);
     }
     )
@@ -58,15 +47,15 @@ async function updateUser(userDetails){
 
 //delete user
 async function deleteUser(userDetails){
-    let sql = `DELETE FROM users
-    WHERE UserId = ${user.UserId}`
+    let sql = `DELETE FROM user
+    WHERE UserId = ${userDetails.UserId}`
     await conn.query(sql)
 }
 
 
 async function getUser(username) {
     let sql = `
-      SELECT * FROM users 
+      SELECT * FROM user 
       WHERE UserName = "${username}" 
     `
     return await conn.query(sql)
